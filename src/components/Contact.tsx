@@ -61,7 +61,7 @@ export default function Contact() {
             >
               {t.contact.successTitle}
             </p>
-            <p className="text-[var(--gold-light)]">
+            <p className="text-[var(--gold)]">
               {t.contact.successMessage}
             </p>
           </div>
