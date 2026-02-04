@@ -33,20 +33,28 @@ export default function Hero() {
       />
 
       <div className="text-center relative z-10">
+        <div className="mb-8 animate-fade-in-up">
+          <span
+            className="inline-block px-4 py-2 text-xs md:text-sm tracking-[0.3em] uppercase border border-[var(--gold)] text-[var(--gold)]"
+            style={{ fontFamily: 'var(--font-sans)' }}
+          >
+            Coming Soon
+          </span>
+        </div>
         <h1
-          className="text-6xl md:text-8xl lg:text-9xl font-light tracking-wider mb-4 animate-fade-in-up"
+          className="text-6xl md:text-8xl lg:text-9xl font-light tracking-wider mb-4 animate-fade-in-up delay-100"
           style={{ fontFamily: 'var(--font-serif)' }}
         >
           Élixir
         </h1>
         <p
-          className="text-2xl md:text-3xl lg:text-4xl tracking-widest text-[var(--gold)] mb-12 animate-fade-in-up delay-200"
+          className="text-2xl md:text-3xl lg:text-4xl tracking-widest text-[var(--gold)] mb-12 animate-fade-in-up delay-300"
           style={{ fontFamily: 'var(--font-serif)' }}
         >
           de Charlevoix
         </p>
         <p
-          className="text-lg md:text-xl text-[var(--foreground-muted)] max-w-2xl mx-auto leading-relaxed animate-fade-in-up delay-300"
+          className="text-lg md:text-xl text-[var(--foreground-muted)] max-w-2xl mx-auto leading-relaxed animate-fade-in-up delay-400"
           style={{ fontFamily: 'var(--font-serif)' }}
         >
           {t.hero.tagline}
