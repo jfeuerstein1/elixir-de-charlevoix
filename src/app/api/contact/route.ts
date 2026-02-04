@@ -1,4 +1,7 @@
 import { NextResponse } from 'next/server';
+import { Resend } from 'resend';
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: Request) {
   try {
@@ -22,24 +25,21 @@ export async function POST(request: Request) {
       );
     }
 
-    // TODO: Add your email service integration here
-    // Options include:
-    // - Resend (resend.com)
-    // - SendGrid
-    // - Nodemailer with SMTP
-    // - AWS SES
-
-    // For now, log the submission (in production, send email)
-    console.log('Contact form submission:', { name, email, message });
-
-    // Example with Resend (uncomment and add API key):
-    // const resend = new Resend(process.env.RESEND_API_KEY);
-    // await resend.emails.send({
-    //   from: 'contact@elixirdecharlevoix.com',
-    //   to: 'your-email@example.com',
-    //   subject: `New contact from ${name}`,
-    //   text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
-    // });
+    // Send email via Resend
+    await resend.emails.send({
+      from: 'Élixir de Charlevoix <onboarding@resend.dev>',
+      to: 'jfeuerstein1@gmail.com',
+      replyTo: email,
+      subject: `New contact from ${name} - Élixir de Charlevoix`,
+      text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
+      html: `
+        <h2>New Contact Form Submission</h2>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <h3>Message:</h3>
+        <p>${message.replace(/\n/g, '<br>')}</p>
+      `,
+    });
 
     return NextResponse.json(
       { success: true, message: 'Message sent successfully' },
