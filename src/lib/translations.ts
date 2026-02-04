@@ -82,6 +82,8 @@ export const translations = {
       send: 'Send Message',
       sending: 'Sending...',
       success: 'Thank you for your message. We\'ll be in touch soon.',
+      successTitle: 'Thanks for reaching out.',
+      successMessage: 'We\'ll be in touch soon.',
       error: 'Something went wrong. Please try again.',
     },
     // Footer
@@ -174,6 +176,8 @@ export const translations = {
       send: 'Envoyer',
       sending: 'Envoi en cours...',
       success: 'Merci pour votre message. Nous vous répondrons bientôt.',
+      successTitle: 'Merci de nous avoir contactés.',
+      successMessage: 'Nous vous répondrons bientôt.',
       error: 'Une erreur s\'est produite. Veuillez réessayer.',
     },
     // Footer

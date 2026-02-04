@@ -50,77 +50,103 @@ export default function Contact() {
           </p>
         </ScrollReveal>
 
-        <ScrollReveal delay={100}>
-          <form onSubmit={handleSubmit} className="space-y-8">
-            <div>
-              <label
-                htmlFor="name"
-                className="block text-sm tracking-wider text-[var(--foreground-muted)] mb-2"
+        {status === 'success' ? (
+          <div className="text-center py-16 animate-fade-in">
+            <div className="mb-8">
+              <svg
+                className="w-16 h-16 mx-auto text-[var(--gold)]"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
               >
-                {t.contact.name}
-              </label>
-              <input
-                type="text"
-                id="name"
-                required
-                value={formData.name}
-                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                className="w-full bg-transparent border-b border-[var(--forest-light)] py-3 text-[var(--foreground)] focus:border-[var(--gold)] focus:outline-none transition-colors"
-              />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={1.5}
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
             </div>
+            <p
+              className="text-2xl md:text-3xl font-light text-[var(--foreground)] mb-4"
+              style={{ fontFamily: 'var(--font-serif)' }}
+            >
+              {t.contact.successTitle}
+            </p>
+            <p className="text-[var(--foreground-muted)]">
+              {t.contact.successMessage}
+            </p>
+          </div>
+        ) : (
+          <ScrollReveal delay={100}>
+            <form onSubmit={handleSubmit} className="space-y-8">
+              <div>
+                <label
+                  htmlFor="name"
+                  className="block text-sm tracking-wider text-[var(--foreground-muted)] mb-2"
+                >
+                  {t.contact.name}
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  required
+                  value={formData.name}
+                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                  className="w-full bg-transparent border-b border-[var(--forest-light)] py-3 text-[var(--foreground)] focus:border-[var(--gold)] focus:outline-none transition-colors"
+                />
+              </div>
 
-            <div>
-              <label
-                htmlFor="email"
-                className="block text-sm tracking-wider text-[var(--foreground-muted)] mb-2"
-              >
-                {t.contact.email}
-              </label>
-              <input
-                type="email"
-                id="email"
-                required
-                value={formData.email}
-                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                className="w-full bg-transparent border-b border-[var(--forest-light)] py-3 text-[var(--foreground)] focus:border-[var(--gold)] focus:outline-none transition-colors"
-              />
-            </div>
+              <div>
+                <label
+                  htmlFor="email"
+                  className="block text-sm tracking-wider text-[var(--foreground-muted)] mb-2"
+                >
+                  {t.contact.email}
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  required
+                  value={formData.email}
+                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                  className="w-full bg-transparent border-b border-[var(--forest-light)] py-3 text-[var(--foreground)] focus:border-[var(--gold)] focus:outline-none transition-colors"
+                />
+              </div>
 
-            <div>
-              <label
-                htmlFor="message"
-                className="block text-sm tracking-wider text-[var(--foreground-muted)] mb-2"
-              >
-                {t.contact.message}
-              </label>
-              <textarea
-                id="message"
-                required
-                rows={5}
-                value={formData.message}
-                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                className="w-full bg-transparent border-b border-[var(--forest-light)] py-3 text-[var(--foreground)] focus:border-[var(--gold)] focus:outline-none transition-colors resize-none"
-              />
-            </div>
+              <div>
+                <label
+                  htmlFor="message"
+                  className="block text-sm tracking-wider text-[var(--foreground-muted)] mb-2"
+                >
+                  {t.contact.message}
+                </label>
+                <textarea
+                  id="message"
+                  required
+                  rows={5}
+                  value={formData.message}
+                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                  className="w-full bg-transparent border-b border-[var(--forest-light)] py-3 text-[var(--foreground)] focus:border-[var(--gold)] focus:outline-none transition-colors resize-none"
+                />
+              </div>
 
-            <div className="pt-4">
-              <button
-                type="submit"
-                disabled={status === 'sending'}
-                className="w-full md:w-auto px-12 py-4 border border-[var(--gold)] text-[var(--gold)] hover:bg-[var(--gold)] hover:text-[var(--forest-dark)] transition-all duration-300 tracking-wider text-sm disabled:opacity-50 disabled:cursor-not-allowed"
-              >
-                {status === 'sending' ? t.contact.sending : t.contact.send}
-              </button>
-            </div>
+              <div className="pt-4">
+                <button
+                  type="submit"
+                  disabled={status === 'sending'}
+                  className="w-full md:w-auto px-12 py-4 border border-[var(--gold)] text-[var(--gold)] hover:bg-[var(--gold)] hover:text-[var(--forest-dark)] transition-all duration-300 tracking-wider text-sm disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  {status === 'sending' ? t.contact.sending : t.contact.send}
+                </button>
+              </div>
 
-            {status === 'success' && (
-              <p className="text-[var(--sage)] text-center">{t.contact.success}</p>
-            )}
-            {status === 'error' && (
-              <p className="text-red-400 text-center">{t.contact.error}</p>
-            )}
-          </form>
-        </ScrollReveal>
+              {status === 'error' && (
+                <p className="text-red-400 text-center">{t.contact.error}</p>
+              )}
+            </form>
+          </ScrollReveal>
+        )}
       </div>
     </section>
   );
