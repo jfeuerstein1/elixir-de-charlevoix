@@ -38,18 +38,6 @@ export default function Contact() {
   return (
     <section id="contact" className="py-24 md:py-32 px-6">
       <div className="max-w-2xl mx-auto">
-        <ScrollReveal>
-          <h2
-            className="text-4xl md:text-5xl lg:text-6xl font-light text-center mb-6 tracking-wide"
-            style={{ fontFamily: 'var(--font-serif)' }}
-          >
-            {t.contact.title}
-          </h2>
-          <p className="text-center text-[var(--foreground-muted)] mb-16">
-            {t.contact.subtitle}
-          </p>
-        </ScrollReveal>
-
         {status === 'success' ? (
           <div className="text-center py-16 animate-fade-in">
             <div className="mb-8">
@@ -68,16 +56,28 @@ export default function Contact() {
               </svg>
             </div>
             <p
-              className="text-2xl md:text-3xl font-light text-[var(--foreground)] mb-4"
+              className="text-2xl md:text-3xl font-light text-[var(--gold)] mb-4"
               style={{ fontFamily: 'var(--font-serif)' }}
             >
               {t.contact.successTitle}
             </p>
-            <p className="text-[var(--foreground-muted)]">
+            <p className="text-[var(--gold-light)]">
               {t.contact.successMessage}
             </p>
           </div>
         ) : (
+          <>
+          <ScrollReveal>
+            <h2
+              className="text-4xl md:text-5xl lg:text-6xl font-light text-center mb-6 tracking-wide"
+              style={{ fontFamily: 'var(--font-serif)' }}
+            >
+              {t.contact.title}
+            </h2>
+            <p className="text-center text-[var(--foreground-muted)] mb-16">
+              {t.contact.subtitle}
+            </p>
+          </ScrollReveal>
           <ScrollReveal delay={100}>
             <form onSubmit={handleSubmit} className="space-y-8">
               <div>
@@ -146,6 +146,7 @@ export default function Contact() {
               )}
             </form>
           </ScrollReveal>
+          </>
         )}
       </div>
     </section>
