@@ -2,7 +2,7 @@ export const translations = {
   en: {
     // Navigation
     nav: {
-      story: 'Our Story',
+      story: 'The Story',
       ingredients: 'Ingredients',
       tasting: 'Tasting Notes',
       serving: 'Serving',
@@ -23,7 +23,7 @@ export const translations = {
       tagline: 'An herbal liqueur inspired by the boreal forests of Charlevoix',
       scroll: 'Discover',
     },
-    // Our Story
+    // The Story
     story: {
       title: 'Our Story',
       p1: 'The result of over two years of obsession and experimentation by distiller Arnaud Lapointe, Élixir de Charlevoix is an intense, richly layered herbal liqueur with exceptional aromatic depth.',
@@ -37,7 +37,7 @@ export const translations = {
       ingredientsTitle: 'Seventy-Four Botanicals',
       ingredientsText: 'The Élixir is made from seventy-four different botanicals—herbs, flowers, buds, barks, roots, and spices—including wormwood, spruce gum, burdock root, tansy, yarrow, Labrador tea, sweet gale, alder pepper, poplar buds, lavender, and nettle. Nearly all the botanicals are sourced from Charlevoix and greater Québec.',
       productionTitle: 'Our Process',
-      productionText: 'We macerate sixty-seven botanicals in a neutral grain spirit, which is then distilled in a 700-liter pot still. The distillate is then sweetened and proofed down to 54% ABV. A final maceration with seven additional botanicals adds finishing aromatics and the Élixir\'s natural green color.',
+      productionText: 'We macerate sixty-seven botanicals in a neutral grain spirit, which is then distilled in a 700-liter pot still. The distillate is then sweetened and proofed down to 54% ABV. A final maceration with seven additional botanicals adds finishing aromatics and the Élixir\'s beautiful, 100% natural green color.',
     },
     // Tasting Notes
     tasting: {
@@ -58,7 +58,7 @@ export const translations = {
       digestif: 'As a Digestif',
       digestifText: 'Delicious neat, slightly chilled (~55°F), or with a single ice cube.',
       cocktails: 'In Cocktails',
-      cocktailsText: 'A great substitute for Green Chartreuse in Last Word, La Última Palabra (mezcal instead of gin), Bijou, Tailspin, and Tipperary cocktails.',
+      cocktailsText: 'A great substitute for Green Chartreuse in Last Word, La Última Palabra, Bijou, Tailspin, and Tipperary cocktails.',
     },
     // Details
     details: {
@@ -66,11 +66,11 @@ export const translations = {
       abv: 'ABV',
       abvValue: '54%',
       availability: 'Availability',
-      availabilityValue: 'Late Spring/Early Summer 2026 for select establishments in NYC & Montreal',
+      availabilityValue: 'Summer 2026 for select establishments in NYC & Montreal',
       price: 'Price',
       priceValue: 'To be announced',
       size: 'Bottle Size',
-      sizeValue: '750 ml (other sizes to be determined)',
+      sizeValue: '750 ml',
     },
     // Contact
     contact: {
@@ -96,7 +96,7 @@ export const translations = {
   fr: {
     // Navigation
     nav: {
-      story: 'Notre Histoire',
+      story: 'L'histoire',
       ingredients: 'Ingrédients',
       tasting: 'Notes de Dégustation',
       serving: 'Service',
@@ -119,7 +119,7 @@ export const translations = {
     },
     // Our Story
     story: {
-      title: 'Notre Histoire',
+      title: 'L'histoire',
       p1: 'Le résultat de plus de deux ans d\'obsession et d\'expérimentation par le distillateur Arnaud Lapointe, l\'Élixir de Charlevoix est une liqueur aux herbes intense et richement stratifiée avec une profondeur aromatique exceptionnelle.',
       p2: 'L\'Élixir fait un clin d\'œil à la Chartreuse Verte tout en exprimant son propre caractère, inspiré par les forêts boréales de la région de Charlevoix au Québec.',
       p3: 'Né de la profonde connexion d\'Arnaud et du co-fondateur Eli Halliwell avec Charlevoix et ses régions environnantes, l\'Élixir de Charlevoix a été fondé pour célébrer et soutenir ce paysage préservé et éloigné ainsi que les communautés qui y vivent et y travaillent.',
@@ -131,7 +131,7 @@ export const translations = {
       ingredientsTitle: 'Soixante-Quatorze Plantes',
       ingredientsText: 'L\'Élixir est composé de soixante-quatorze plantes différentes—herbes, fleurs, bourgeons, écorces, racines et épices—incluant l\'absinthe, la gomme d\'épinette, la racine de bardane, la tanaisie, l\'achillée, le thé du Labrador, le myrique baumier, le poivre des dunes, les bourgeons de peuplier, la lavande et l\'ortie. Presque toutes les plantes proviennent de Charlevoix et du grand Québec.',
       productionTitle: 'Notre Processus',
-      productionText: 'Nous macérons soixante-sept plantes dans un alcool de grain neutre, qui est ensuite distillé dans un alambic de 700 litres. Le distillat est ensuite sucré et ajusté à 54% d\'alcool. Une macération finale avec sept plantes supplémentaires ajoute les arômes de finition et la couleur verte naturelle de l\'Élixir.',
+      productionText: 'Nous macérons soixante-sept plantes dans un alcool de grain neutre, qui est ensuite distillé dans un alambic de 700 litres. Le distillat est ensuite sucré et ajusté à 54% d\'alcool. Une macération finale avec sept plantes supplémentaires ajoute les arômes de finition et la magnifique couleur verte 100% naturelle de l\'Élixir.',
     },
     // Tasting Notes
     tasting: {
@@ -152,7 +152,7 @@ export const translations = {
       digestif: 'En Digestif',
       digestifText: 'Délicieux pur, légèrement frais (~13°C), ou avec un seul glaçon.',
       cocktails: 'En Cocktails',
-      cocktailsText: 'Un excellent substitut à la Chartreuse Verte dans les cocktails Last Word, La Última Palabra (mezcal au lieu de gin), Bijou, Tailspin et Tipperary.',
+      cocktailsText: 'Un excellent substitut à la Chartreuse Verte dans les cocktails Last Word, La Última Palabra, Bijou, Tailspin et Tipperary.',
     },
     // Details
     details: {
@@ -160,11 +160,11 @@ export const translations = {
       abv: 'Alcool',
       abvValue: '54%',
       availability: 'Disponibilité',
-      availabilityValue: 'Fin du printemps/début de l\'été 2026 pour certains établissements à NYC et Montréal',
+      availabilityValue: 'Été 2026 pour certains établissements à NYC et Montréal',
       price: 'Prix',
       priceValue: 'À annoncer',
       size: 'Format',
-      sizeValue: '750 ml (autres formats à déterminer)',
+      sizeValue: '750 ml',
     },
     // Contact
     contact: {
