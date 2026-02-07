@@ -25,7 +25,7 @@ export const translations = {
     },
     // The Story
     story: {
-      title: 'Our Story',
+      title: 'The Story',
       p1: 'The result of over two years of obsession and experimentation by distiller Arnaud Lapointe, Élixir de Charlevoix is an intense, richly layered herbal liqueur with exceptional aromatic depth.',
       p2: 'The Élixir nods to Green Chartreuse while expressing its own character, inspired by the boreal forests of Québec\'s Charlevoix region.',
       p3: 'Born from Arnaud and co-founder Eli Halliwell\'s deep connection to Charlevoix and its surrounding regions, Élixir de Charlevoix was founded to celebrate and support this pristine, remote landscape and the communities who live and work within it.',
@@ -96,7 +96,7 @@ export const translations = {
   fr: {
     // Navigation
     nav: {
-      story: 'L'histoire',
+      story: "L'histoire",
       ingredients: 'Ingrédients',
       tasting: 'Notes de Dégustation',
       serving: 'Service',
@@ -117,9 +117,9 @@ export const translations = {
       tagline: 'Une liqueur aux herbes inspirée des forêts boréales de Charlevoix',
       scroll: 'Découvrir',
     },
-    // Our Story
+    // The Story
     story: {
-      title: 'L'histoire',
+      title: "L'histoire",
       p1: 'Le résultat de plus de deux ans d\'obsession et d\'expérimentation par le distillateur Arnaud Lapointe, l\'Élixir de Charlevoix est une liqueur aux herbes intense et richement stratifiée avec une profondeur aromatique exceptionnelle.',
       p2: 'L\'Élixir fait un clin d\'œil à la Chartreuse Verte tout en exprimant son propre caractère, inspiré par les forêts boréales de la région de Charlevoix au Québec.',
       p3: 'Né de la profonde connexion d\'Arnaud et du co-fondateur Eli Halliwell avec Charlevoix et ses régions environnantes, l\'Élixir de Charlevoix a été fondé pour célébrer et soutenir ce paysage préservé et éloigné ainsi que les communautés qui y vivent et y travaillent.',
