@@ -34,7 +34,7 @@ export const translations = {
     // Ingredients & Production
     ingredients: {
       title: 'Ingredients & Production',
-      ingredientsTitle: 'Seventy-Four Botanicals',
+      ingredientsTitle: 'Seventy-Four Ingredients',
       ingredientsText: 'The Élixir is made from seventy-four different botanicals—herbs, flowers, buds, barks, roots, and spices—including wormwood, spruce gum, burdock root, tansy, yarrow, Labrador tea, sweet gale, alder pepper, poplar buds, lavender, and nettle. Nearly all the botanicals are sourced from Charlevoix and greater Québec.',
       productionTitle: 'Our Process',
       productionText: 'We macerate sixty-seven botanicals in a neutral grain spirit, which is then distilled in a 700-liter pot still. The distillate is then sweetened and proofed down to 54% ABV. A final maceration with seven additional botanicals adds finishing aromatics and the Élixir\'s beautiful, 100% natural green color.',
@@ -128,7 +128,7 @@ export const translations = {
     // Ingredients & Production
     ingredients: {
       title: 'Ingrédients & Production',
-      ingredientsTitle: 'Soixante-Quatorze Plantes',
+      ingredientsTitle: 'Soixante-Quatorze Ingrédients',
       ingredientsText: 'L\'Élixir est composé de soixante-quatorze plantes différentes—herbes, fleurs, bourgeons, écorces, racines et épices—incluant l\'absinthe, la gomme d\'épinette, la racine de bardane, la tanaisie, l\'achillée, le thé du Labrador, le myrique baumier, le poivre des dunes, les bourgeons de peuplier, la lavande et l\'ortie. Presque toutes les plantes proviennent de Charlevoix et du grand Québec.',
       productionTitle: 'Notre Processus',
       productionText: 'Nous macérons soixante-sept plantes dans un alcool de grain neutre, qui est ensuite distillé dans un alambic de 700 litres. Le distillat est ensuite sucré et ajusté à 54% d\'alcool. Une macération finale avec sept plantes supplémentaires ajoute les arômes de finition et la magnifique couleur verte 100% naturelle de l\'Élixir.',
