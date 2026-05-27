@@ -119,7 +119,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Shimmer sweep for CTA button */
 @keyframes shimmer {
   0%   { transform: translateX(-200%) skewX(-15deg); }
-  25%  { transform: translateX(-200%) skewX(-15deg); }
+  40%  { transform: translateX(-200%) skewX(-15deg); }
   100% { transform: translateX(600%) skewX(-15deg); }
 }
 
@@ -142,5 +142,5 @@ h1, h2, h3, h4, h5, h6 {
     transparent 100%
   );
   transform: translateX(-200%) skewX(-15deg);
-  animation: shimmer 6s ease-in-out infinite;
+  animation: shimmer 5s linear infinite;
 }
