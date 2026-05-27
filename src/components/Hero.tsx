@@ -59,6 +59,15 @@ export default function Hero() {
         >
           {t.hero.tagline}
         </p>
+        <div className="mt-10 animate-fade-in-up delay-500">
+          <a
+            href="#contact"
+            className="inline-block px-10 py-4 bg-[var(--gold)] text-[var(--forest-dark)] hover:bg-transparent hover:text-[var(--gold)] border border-[var(--gold)] transition-all duration-300 tracking-widest text-sm uppercase"
+            style={{ fontFamily: 'var(--font-sans)' }}
+          >
+            {t.hero.cta}
+          </a>
+        </div>
       </div>
 
       {/* Scroll indicator */}

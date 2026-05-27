@@ -123,7 +123,6 @@ export default function Contact() {
                 </label>
                 <textarea
                   id="message"
-                  required
                   rows={5}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}

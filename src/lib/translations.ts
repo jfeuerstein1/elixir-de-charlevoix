@@ -22,6 +22,7 @@ export const translations = {
     hero: {
       tagline: 'An herbal liqueur inspired by the boreal forests of Charlevoix',
       scroll: 'Discover',
+      cta: 'Be First to Know',
     },
     // The Story
     story: {
@@ -74,11 +75,11 @@ export const translations = {
     },
     // Contact
     contact: {
-      title: 'Get in Touch',
-      subtitle: 'We\'d love to hear from you',
+      title: 'Be First to Know',
+      subtitle: 'We\'ll let you know when Élixir de Charlevoix is available',
       name: 'Name',
       email: 'Email',
-      message: 'Message',
+      message: 'Message (optional)',
       send: 'Send Message',
       sending: 'Sending...',
       success: 'Thank you for your message. We\'ll be in touch soon.',
@@ -116,6 +117,7 @@ export const translations = {
     hero: {
       tagline: 'Une liqueur aux herbes inspirée des forêts boréales de Charlevoix',
       scroll: 'Découvrir',
+      cta: 'Soyez les premiers informés',
     },
     // The Story
     story: {
@@ -168,11 +170,11 @@ export const translations = {
     },
     // Contact
     contact: {
-      title: 'Contactez-Nous',
-      subtitle: 'Nous serions ravis de vous entendre',
+      title: 'Soyez les premiers informés',
+      subtitle: "Nous vous informerons dès que l'Élixir de Charlevoix sera disponible",
       name: 'Nom',
       email: 'Courriel',
-      message: 'Message',
+      message: 'Message (facultatif)',
       send: 'Envoyer',
       sending: 'Envoi en cours...',
       success: 'Merci pour votre message. Nous vous répondrons bientôt.',
