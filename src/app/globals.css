@@ -118,8 +118,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Shimmer sweep for CTA button */
 @keyframes shimmer {
-  0% { transform: translateX(-100%) skewX(-15deg); }
-  100% { transform: translateX(250%) skewX(-15deg); }
+  0%   { transform: translateX(-200%) skewX(-15deg); }
+  60%  { transform: translateX(-200%) skewX(-15deg); }
+  100% { transform: translateX(600%) skewX(-15deg); }
 }
 
 .btn-shimmer {
@@ -130,14 +131,16 @@ h1, h2, h3, h4, h5, h6 {
 .btn-shimmer::after {
   content: '';
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 30%;
   background: linear-gradient(
     90deg,
     transparent 0%,
-    rgba(255, 255, 255, 0.35) 50%,
+    rgba(255, 255, 255, 0.45) 50%,
     transparent 100%
   );
-  width: 40%;
-  animation: shimmer 3s ease-in-out infinite;
-  animation-delay: 1.5s;
+  transform: translateX(-200%) skewX(-15deg);
+  animation: shimmer 4s ease-in-out infinite;
 }
