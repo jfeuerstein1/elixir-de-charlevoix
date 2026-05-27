@@ -31,6 +31,7 @@ export const translations = {
       p2: 'The Élixir nods to Green Chartreuse while expressing its own character, inspired by the boreal forests of Québec\'s Charlevoix region.',
       p3: 'Born from Arnaud and co-founder Eli Halliwell\'s deep connection to Charlevoix and its surrounding regions, Élixir de Charlevoix was founded to celebrate and support this pristine, remote landscape and the communities who live and work within it.',
       p4: 'We source our ingredients locally whenever possible, working hand-in-hand with growers and foragers to craft liqueurs and spirits that capture the distinctive character of this remarkable place.',
+      cta: 'Keep Me Posted',
     },
     // Ingredients & Production
     ingredients: {
@@ -43,6 +44,7 @@ export const translations = {
     // Tasting Notes
     tasting: {
       title: 'Tasting Notes',
+      cta: 'Get Early Access',
       visual: 'Visual',
       visualText: 'Dark green with hints of yellow. Color may evolve slightly with time and exposure to light.',
       nose: 'Nose',
@@ -64,6 +66,7 @@ export const translations = {
     // Details
     details: {
       title: 'Details',
+      cta: 'Join Our List',
       abv: 'ABV',
       abvValue: '54%',
       availability: 'Availability',
@@ -126,6 +129,7 @@ export const translations = {
       p2: 'L\'Élixir fait un clin d\'œil à la Chartreuse Verte tout en exprimant son propre caractère, inspiré par les forêts boréales de la région de Charlevoix au Québec.',
       p3: 'Né de la profonde connexion d\'Arnaud et du co-fondateur Eli Halliwell avec Charlevoix et ses régions environnantes, l\'Élixir de Charlevoix a été fondé pour célébrer et soutenir ce paysage préservé et éloigné ainsi que les communautés qui y vivent et y travaillent.',
       p4: 'Nous nous approvisionnons localement autant que possible, travaillant main dans la main avec des cultivateurs et des cueilleurs pour créer des liqueurs et des spiritueux qui capturent le caractère distinctif de cet endroit remarquable.',
+      cta: 'Tenez-moi informé',
     },
     // Ingredients & Production
     ingredients: {
@@ -138,6 +142,7 @@ export const translations = {
     // Tasting Notes
     tasting: {
       title: 'Notes de Dégustation',
+      cta: 'Accès anticipé',
       visual: 'Visuel',
       visualText: 'Vert foncé avec des reflets jaunes. La couleur peut évoluer légèrement avec le temps et l\'exposition à la lumière.',
       nose: 'Nez',
@@ -159,6 +164,7 @@ export const translations = {
     // Details
     details: {
       title: 'Détails',
+      cta: 'Rejoindre notre liste',
       abv: 'Alcool',
       abvValue: '54%',
       availability: 'Disponibilité',

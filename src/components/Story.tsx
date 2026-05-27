@@ -35,7 +35,13 @@ export default function Story() {
 
         <ScrollReveal delay={500}>
           <div className="mt-16 flex justify-center">
-            <div className="w-24 h-px bg-[var(--gold)] opacity-50" />
+            <a
+              href="#contact"
+              className="btn-shimmer inline-block px-10 py-4 bg-[var(--gold)] text-[var(--forest-dark)] hover:bg-transparent hover:text-[var(--gold)] border border-[var(--gold)] transition-all duration-300 tracking-widest text-sm uppercase"
+              style={{ fontFamily: 'var(--font-sans)' }}
+            >
+              {t.story.cta}
+            </a>
           </div>
         </ScrollReveal>
       </div>
