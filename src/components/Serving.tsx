@@ -25,10 +25,10 @@ export default function Serving() {
                 className="text-2xl md:text-3xl font-light mb-6 text-[var(--gold)]"
                 style={{ fontFamily: 'var(--font-serif)' }}
               >
-                {t.serving.digestif}
+                {t.serving.cocktails}
               </h3>
               <p className="text-lg leading-relaxed text-[var(--foreground-muted)]">
-                {t.serving.digestifText}
+                {t.serving.cocktailsText}
               </p>
             </div>
           </ScrollReveal>
@@ -39,10 +39,10 @@ export default function Serving() {
                 className="text-2xl md:text-3xl font-light mb-6 text-[var(--gold)]"
                 style={{ fontFamily: 'var(--font-serif)' }}
               >
-                {t.serving.cocktails}
+                {t.serving.digestif}
               </h3>
               <p className="text-lg leading-relaxed text-[var(--foreground-muted)]">
-                {t.serving.cocktailsText}
+                {t.serving.digestifText}
               </p>
             </div>
           </ScrollReveal>
