@@ -2,6 +2,8 @@
 
 import { useLanguage } from '@/context/LanguageContext';
 import ScrollReveal from './ScrollReveal';
+import { siteConfig } from '@/lib/siteConfig';
+import { interpolate } from '@/lib/interpolate';
 
 export default function Serving() {
   const { t } = useLanguage();
@@ -28,7 +30,7 @@ export default function Serving() {
                 {t.serving.cocktails}
               </h3>
               <p className="text-lg leading-relaxed text-[var(--foreground-muted)]">
-                {t.serving.cocktailsText}
+                {interpolate(t.serving.cocktailsText, { primaryName: siteConfig.primaryName })}
               </p>
             </div>
           </ScrollReveal>
