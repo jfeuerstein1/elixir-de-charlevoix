@@ -17,7 +17,7 @@
   --sage: #7a8c6e;
 
   /* Typography */
-  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-serif: 'Outfit', system-ui, sans-serif;
   --font-sans: 'Inter', system-ui, sans-serif;
 }
 

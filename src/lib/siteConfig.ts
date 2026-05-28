@@ -6,6 +6,6 @@ export const siteConfig = {
   primaryName,
   subName,
   pageTitle: `${primaryName} | ${subName}`,
-  uppercase: isNewSite,
+  uppercase: true,
   bottleImage: process.env.NEXT_PUBLIC_BOTTLE_IMAGE ?? null,
 };

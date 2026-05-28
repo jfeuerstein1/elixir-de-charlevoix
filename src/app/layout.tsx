@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Inter } from "next/font/google";
+import { Outfit, Inter } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/context/LanguageContext";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { siteConfig } from "@/lib/siteConfig";
 
-const cormorant = Cormorant_Garamond({
+const outfit = Outfit({
   variable: "--font-serif",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
+  weight: ["200", "300", "400", "500", "600", "700"],
   display: "swap",
 });
 
@@ -37,7 +37,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${cormorant.variable} ${inter.variable} antialiased`}>
+      <body className={`${outfit.variable} ${inter.variable} antialiased`}>
         <LanguageProvider>
           {children}
         </LanguageProvider>
