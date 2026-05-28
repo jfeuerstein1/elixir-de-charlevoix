@@ -46,14 +46,14 @@ export default function Details() {
           <div className={`${siteConfig.bottleImage ? 'md:w-2/3' : 'max-w-4xl mx-auto w-full'} grid gap-8`}>
             {details.map((detail, index) => (
               <ScrollReveal key={detail.label} delay={index * 100}>
-                <div className="flex flex-col md:flex-row md:items-center justify-between py-6 border-b border-[var(--forest-light)]">
+                <div className="flex flex-col md:flex-row md:items-baseline justify-between gap-2 md:gap-8 py-6 border-b border-[var(--forest-light)]">
                   <span
-                    className="text-lg text-[var(--gold)] mb-2 md:mb-0"
+                    className="text-lg text-[var(--gold)] flex-shrink-0"
                     style={{ fontFamily: 'var(--font-serif)' }}
                   >
                     {detail.label}
                   </span>
-                  <span className="text-lg text-[var(--foreground-muted)]">
+                  <span className="text-lg text-[var(--foreground-muted)] md:text-right">
                     {detail.value}
                   </span>
                 </div>
