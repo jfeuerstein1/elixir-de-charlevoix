@@ -62,11 +62,11 @@ export const translations = {
       digestifText: 'Delicious neat, slightly chilled (~55°F), or with a single ice cube.',
       cocktails: 'In Cocktails',
       cocktailsText: 'A great substitute for Green Chartreuse in Last Word, La Última Palabra, Bijou, Tailspin, and Tipperary cocktails.',
+      cta: 'Join Our List',
     },
     // Details
     details: {
       title: 'Details',
-      cta: 'Join Our List',
       abv: 'ABV',
       abvValue: '54%',
       availability: 'Availability',
@@ -160,11 +160,11 @@ export const translations = {
       digestifText: 'Délicieux pur, légèrement frais (~13°C), ou avec un seul glaçon.',
       cocktails: 'En Cocktails',
       cocktailsText: 'Un excellent substitut à la Chartreuse Verte dans les cocktails Last Word, La Última Palabra, Bijou, Tailspin et Tipperary.',
+      cta: 'Rejoindre notre liste',
     },
     // Details
     details: {
       title: 'Détails',
-      cta: 'Rejoindre notre liste',
       abv: 'Alcool',
       abvValue: '54%',
       availability: 'Disponibilité',
