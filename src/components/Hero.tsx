@@ -43,7 +43,7 @@ export default function Hero() {
           </span>
         </div>
         <h1
-          className="text-6xl md:text-8xl lg:text-9xl font-light tracking-wider mb-4 animate-fade-in-up delay-100 uppercase"
+          className={`text-6xl md:text-8xl lg:text-9xl font-light tracking-wider mb-4 animate-fade-in-up delay-100${siteConfig.uppercase ? ' uppercase' : ''}`}
           style={{ fontFamily: 'var(--font-serif)' }}
         >
           {siteConfig.primaryName}
