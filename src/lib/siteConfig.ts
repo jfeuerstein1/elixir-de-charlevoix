@@ -7,4 +7,5 @@ export const siteConfig = {
   subName,
   pageTitle: `${primaryName} | ${subName}`,
   uppercase: isNewSite,
+  bottleImage: process.env.NEXT_PUBLIC_BOTTLE_IMAGE ?? null,
 };
