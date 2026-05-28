@@ -45,7 +45,7 @@ export default function AgeGate({ onVerified }: AgeGateProps) {
 
       <div className="text-center px-6 max-w-md animate-fade-in">
         <h1
-          className={`text-5xl md:text-6xl font-normal tracking-wide mb-2${siteConfig.uppercase ? ' uppercase' : ''}`}
+          className={`text-5xl md:text-6xl font-normal tracking-wider mb-2${siteConfig.uppercase ? ' uppercase' : ''}`}
           style={{ fontFamily: 'var(--font-serif)' }}
         >
           {siteConfig.primaryName}
