@@ -2,14 +2,17 @@
 
 import { useLanguage } from '@/context/LanguageContext';
 import ScrollReveal from './ScrollReveal';
+import { siteConfig } from '@/lib/siteConfig';
+import { interpolate } from '@/lib/interpolate';
 
 export default function TastingNotes() {
   const { t } = useLanguage();
 
+  const vars = { primaryName: siteConfig.primaryName };
   const notes = [
     { title: t.tasting.visual, text: t.tasting.visualText },
     { title: t.tasting.nose, text: t.tasting.noseText },
-    { title: t.tasting.palate, text: t.tasting.palateText + ' ' + t.tasting.texture },
+    { title: t.tasting.palate, text: interpolate(t.tasting.palateText, vars) + ' ' + t.tasting.texture },
     { title: t.tasting.finish, text: t.tasting.finishText },
   ];
 

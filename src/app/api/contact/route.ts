@@ -30,7 +30,7 @@ export async function POST(request: Request) {
       from: 'Élixir de Charlevoix <onboarding@resend.dev>',
       to: 'jfeuerstein1@gmail.com',
       replyTo: email,
-      subject: `New contact from ${name} - Élixir de Charlevoix`,
+      subject: `New contact from ${name} - ${process.env.NEXT_PUBLIC_PRIMARY_NAME ?? 'Élixir'} ${process.env.NEXT_PUBLIC_SUB_NAME ?? 'de Charlevoix'}`,
       text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
       html: `
         <h2>New Contact Form Submission</h2>

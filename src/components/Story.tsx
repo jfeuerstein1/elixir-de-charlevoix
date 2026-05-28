@@ -2,6 +2,8 @@
 
 import { useLanguage } from '@/context/LanguageContext';
 import ScrollReveal from './ScrollReveal';
+import { siteConfig } from '@/lib/siteConfig';
+import { interpolate } from '@/lib/interpolate';
 
 export default function Story() {
   const { t } = useLanguage();
@@ -20,13 +22,13 @@ export default function Story() {
 
         <div className="space-y-8 text-lg leading-relaxed text-[var(--foreground-muted)]">
           <ScrollReveal delay={100}>
-            <p>{t.story.p1}</p>
+            <p>{interpolate(t.story.p1, { primaryName: siteConfig.primaryName })}</p>
           </ScrollReveal>
           <ScrollReveal delay={200}>
-            <p>{t.story.p2}</p>
+            <p>{interpolate(t.story.p2, { primaryName: siteConfig.primaryName })}</p>
           </ScrollReveal>
           <ScrollReveal delay={300}>
-            <p>{t.story.p3}</p>
+            <p>{interpolate(t.story.p3, { primaryName: siteConfig.primaryName })}</p>
           </ScrollReveal>
           <ScrollReveal delay={400}>
             <p>{t.story.p4}</p>

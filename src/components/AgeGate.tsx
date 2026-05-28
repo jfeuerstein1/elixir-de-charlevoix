@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
+import { siteConfig } from '@/lib/siteConfig';
 
 interface AgeGateProps {
   onVerified: () => void;
@@ -44,16 +45,16 @@ export default function AgeGate({ onVerified }: AgeGateProps) {
 
       <div className="text-center px-6 max-w-md animate-fade-in">
         <h1
-          className="text-5xl md:text-6xl font-light tracking-wider mb-2"
+          className="text-5xl md:text-6xl font-light tracking-wider mb-2 uppercase"
           style={{ fontFamily: 'var(--font-serif)' }}
         >
-          Élixir
+          {siteConfig.primaryName}
         </h1>
         <p
           className="text-lg tracking-widest text-[var(--gold)] mb-12"
           style={{ fontFamily: 'var(--font-serif)' }}
         >
-          de Charlevoix
+          {siteConfig.subName}
         </p>
 
         <h2 className="text-2xl mb-4" style={{ fontFamily: 'var(--font-serif)' }}>

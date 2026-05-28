@@ -1,6 +1,7 @@
 'use client';
 
 import { useLanguage } from '@/context/LanguageContext';
+import { siteConfig } from '@/lib/siteConfig';
 
 export default function Hero() {
   const { t } = useLanguage();
@@ -42,16 +43,16 @@ export default function Hero() {
           </span>
         </div>
         <h1
-          className="text-6xl md:text-8xl lg:text-9xl font-light tracking-wider mb-4 animate-fade-in-up delay-100"
+          className="text-6xl md:text-8xl lg:text-9xl font-light tracking-wider mb-4 animate-fade-in-up delay-100 uppercase"
           style={{ fontFamily: 'var(--font-serif)' }}
         >
-          Élixir
+          {siteConfig.primaryName}
         </h1>
         <p
           className="text-2xl md:text-3xl lg:text-4xl tracking-widest text-[var(--gold)] mb-12 animate-fade-in-up delay-300"
           style={{ fontFamily: 'var(--font-serif)' }}
         >
-          de Charlevoix
+          {siteConfig.subName}
         </p>
         <p
           className="text-lg md:text-xl text-[var(--foreground-muted)] max-w-2xl mx-auto leading-relaxed animate-fade-in-up delay-400"

@@ -3,6 +3,8 @@
 import { useState, FormEvent } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import ScrollReveal from './ScrollReveal';
+import { siteConfig } from '@/lib/siteConfig';
+import { interpolate } from '@/lib/interpolate';
 
 export default function Contact() {
   const { t } = useLanguage();
@@ -75,7 +77,7 @@ export default function Contact() {
               {t.contact.title}
             </h2>
             <p className="text-center text-[var(--foreground-muted)] mb-16">
-              {t.contact.subtitle}
+              {interpolate(t.contact.subtitle, { primaryName: siteConfig.primaryName })}
             </p>
           </ScrollReveal>
           <ScrollReveal delay={100}>

@@ -2,6 +2,8 @@
 
 import { useLanguage } from '@/context/LanguageContext';
 import ScrollReveal from './ScrollReveal';
+import { siteConfig } from '@/lib/siteConfig';
+import { interpolate } from '@/lib/interpolate';
 
 export default function Ingredients() {
   const { t } = useLanguage();
@@ -28,7 +30,7 @@ export default function Ingredients() {
                 {t.ingredients.ingredientsTitle}
               </h3>
               <p className="text-lg leading-relaxed text-[var(--foreground-muted)]">
-                {t.ingredients.ingredientsText}
+                {interpolate(t.ingredients.ingredientsText, { primaryName: siteConfig.primaryName })}
               </p>
             </div>
           </ScrollReveal>
@@ -42,7 +44,7 @@ export default function Ingredients() {
                 {t.ingredients.productionTitle}
               </h3>
               <p className="text-lg leading-relaxed text-[var(--foreground-muted)]">
-                {t.ingredients.productionText}
+                {interpolate(t.ingredients.productionText, { primaryName: siteConfig.primaryName })}
               </p>
             </div>
           </ScrollReveal>

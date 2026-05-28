@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
+import { siteConfig } from '@/lib/siteConfig';
 
 export default function Navigation() {
   const { t, language, setLanguage } = useLanguage();
@@ -36,10 +37,11 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <a
           href="#"
-          className="text-xl tracking-wider hover:text-[var(--gold)] transition-colors"
+          className="hover:opacity-80 transition-opacity leading-tight"
           style={{ fontFamily: 'var(--font-serif)' }}
         >
-          Élixir <span className="text-[var(--gold)]">de Charlevoix</span>
+          <span className="block text-xl tracking-wider uppercase">{siteConfig.primaryName}</span>
+          <span className="block text-xs tracking-widest text-[var(--gold)]">{siteConfig.subName}</span>
         </a>
 
         {/* Desktop Navigation */}

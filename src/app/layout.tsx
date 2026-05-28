@@ -4,6 +4,7 @@ import "./globals.css";
 import { LanguageProvider } from "@/context/LanguageContext";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { siteConfig } from "@/lib/siteConfig";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-serif",
@@ -19,11 +20,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Élixir de Charlevoix | Herbal Liqueur",
+  title: siteConfig.pageTitle,
   description: "An intense, richly layered herbal liqueur inspired by the boreal forests of Québec's Charlevoix region. Made from 74 botanicals.",
   keywords: ["herbal liqueur", "Charlevoix", "Quebec", "spirits", "botanical", "artisanal"],
   openGraph: {
-    title: "Élixir de Charlevoix",
+    title: siteConfig.pageTitle,
     description: "An herbal liqueur inspired by the boreal forests of Charlevoix",
     type: "website",
   },
