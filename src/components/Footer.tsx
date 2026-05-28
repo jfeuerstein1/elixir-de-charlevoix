@@ -13,7 +13,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left">
             <p
-              className={`text-xl tracking-wider mb-1${siteConfig.uppercase ? ' uppercase' : ''}`}
+              className={`text-xl tracking-wide mb-1${siteConfig.uppercase ? ' uppercase' : ''}`}
               style={{ fontFamily: 'var(--font-serif)' }}
             >
               {siteConfig.primaryName}

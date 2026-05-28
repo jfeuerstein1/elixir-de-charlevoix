@@ -40,7 +40,7 @@ export default function Navigation() {
           className="hover:opacity-80 transition-opacity leading-tight"
           style={{ fontFamily: 'var(--font-serif)' }}
         >
-          <span className={`block text-xl tracking-wider${siteConfig.uppercase ? ' uppercase' : ''}`}>{siteConfig.primaryName}</span>
+          <span className={`block text-xl tracking-wide${siteConfig.uppercase ? ' uppercase' : ''}`}>{siteConfig.primaryName}</span>
           <span className="block text-xs tracking-widest text-[var(--gold)]">{siteConfig.subName}</span>
         </a>
 
