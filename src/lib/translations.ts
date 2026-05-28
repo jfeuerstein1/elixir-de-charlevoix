@@ -58,9 +58,9 @@ export const translations = {
     // Serving Suggestions
     serving: {
       title: 'Serving Suggestions',
-      digestif: 'As a Digestif',
+      digestif: 'Digestif',
       digestifText: 'Delicious neat, slightly chilled (~55°F), or with a single ice cube.',
-      cocktails: 'In Cocktails',
+      cocktails: 'Cocktails',
       cocktailsText: 'Perfect in Last Word or Bijou cocktails. Try in future classics like the Boerum Hill or Martini Boréal.',
       cta: 'Join Our List',
     },
@@ -156,9 +156,9 @@ export const translations = {
     // Serving Suggestions
     serving: {
       title: 'Suggestions de Service',
-      digestif: 'En Digestif',
+      digestif: 'Digestif',
       digestifText: 'Délicieux pur, légèrement frais (~13°C), ou avec un seul glaçon.',
-      cocktails: 'En Cocktails',
+      cocktails: 'Cocktails',
       cocktailsText: 'Parfait dans un Last Word ou un Bijou. À essayer dans de futurs classiques comme le Boerum Hill ou le Martini Boréal.',
       cta: 'Rejoindre notre liste',
     },
