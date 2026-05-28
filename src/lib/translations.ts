@@ -92,7 +92,7 @@ export const translations = {
     },
     // Footer
     footer: {
-      tagline: 'Crafted with care in Charlevoix, Québec',
+      tagline: 'Crafted with care in Québec',
       rights: 'All rights reserved.',
       drink: 'Please drink responsibly.',
     },
@@ -190,7 +190,7 @@ export const translations = {
     },
     // Footer
     footer: {
-      tagline: 'Élaboré avec soin à Charlevoix, Québec',
+      tagline: 'Élaboré avec soin au Québec',
       rights: 'Tous droits réservés.',
       drink: 'À consommer avec modération.',
     },
