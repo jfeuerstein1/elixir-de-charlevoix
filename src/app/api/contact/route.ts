@@ -28,7 +28,7 @@ export async function POST(request: Request) {
     // Send email via Resend
     await resend.emails.send({
       from: 'Élixir de Charlevoix <onboarding@resend.dev>',
-      to: 'jfeuerstein1@gmail.com',
+      to: ['jfeuerstein1@gmail.com', 'eli.halliwell@gmail.com'],
       replyTo: email,
       subject: `New contact from ${name} - ${process.env.NEXT_PUBLIC_PRIMARY_NAME ?? 'Élixir'} ${process.env.NEXT_PUBLIC_SUB_NAME ?? 'de Charlevoix'}`,
       text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
