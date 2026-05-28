@@ -22,7 +22,7 @@ export default function Story() {
 
         <div className="space-y-8 text-lg leading-relaxed text-[var(--foreground-muted)]">
           <ScrollReveal delay={100}>
-            <p>{interpolate(t.story.p1, { primaryName: siteConfig.primaryName })}</p>
+            <p>{interpolate(t.story.p1, { primaryName: siteConfig.primaryName, subName: siteConfig.subName })}</p>
           </ScrollReveal>
           <ScrollReveal delay={200}>
             <p>{interpolate(t.story.p2, { primaryName: siteConfig.primaryName })}</p>
