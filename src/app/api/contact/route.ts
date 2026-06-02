@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
+import { kv } from '@vercel/kv';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -24,6 +25,12 @@ export async function POST(request: Request) {
         { status: 400 }
       );
     }
+
+    // Log submission to KV store
+    const timestamp = new Date().toISOString();
+    const site = process.env.NEXT_PUBLIC_PRIMARY_NAME ?? 'elixir-de-charlevoix';
+    const logKey = `contact:${site}:${timestamp}`;
+    await kv.set(logKey, { name, email, message, site, timestamp });
 
     // Send email via Resend
     await resend.emails.send({
