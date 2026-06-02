@@ -28,7 +28,8 @@ export async function POST(request: Request) {
 
     // Log submission to KV store
     const timestamp = new Date().toISOString();
-    const site = process.env.NEXT_PUBLIC_PRIMARY_NAME ?? 'elixir-de-charlevoix';
+    const site = (process.env.NEXT_PUBLIC_PRIMARY_NAME ?? 'elixir-de-charlevoix')
+      .toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
     const logKey = `contact:${site}:${timestamp}`;
     await kv.set(logKey, { name, email, message, site, timestamp });
 
