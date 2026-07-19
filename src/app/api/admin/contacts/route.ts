@@ -21,7 +21,12 @@ export async function GET(request: Request) {
   const values = await redis.mget<(ContactEntry | string)[]>(...keys);
   const contacts = keys.map((key, i) => {
     const val = values[i];
-    const entry: ContactEntry = typeof val === 'string' ? JSON.parse(val) : (val ?? {});
+    let entry: ContactEntry = {};
+    if (typeof val === 'string') {
+      try { entry = JSON.parse(val); } catch { entry = { message: val }; }
+    } else if (val) {
+      entry = val;
+    }
     return { key, ...entry };
   })
     .sort((a, b) => (b.timestamp ?? '').localeCompare(a.timestamp ?? ''));
