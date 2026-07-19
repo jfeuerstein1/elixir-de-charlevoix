@@ -141,7 +141,9 @@ export default function AdminPage() {
       padding: '2rem',
       maxWidth: '1100px',
       margin: '0 auto',
-      color: 'var(--text, #222)',
+      color: '#222',
+      background: '#f9f8f6',
+      minHeight: '100vh',
     }}>
       <h1 style={{ marginBottom: '0.25rem', fontSize: '1.25rem', fontWeight: 600, letterSpacing: '0.05em' }}>
         CONTACT SUBMISSIONS
@@ -164,6 +166,8 @@ export default function AdminPage() {
             width: '240px',
             fontFamily: 'monospace',
             fontSize: '0.875rem',
+            background: '#fff',
+            color: '#222',
           }}
         />
         <button onClick={load} style={{
