@@ -66,7 +66,7 @@ export default function AdminPage() {
                 {contacts.map((c, i) => (
                   <tr key={c.key} style={{ background: i % 2 === 0 ? '#fff' : '#fafafa' }}>
                     <td style={{ padding: '0.75rem 1rem', borderBottom: '1px solid #eee', whiteSpace: 'nowrap' }}>
-                      {new Date(c.timestamp).toLocaleString()}
+                      {c.timestamp ? (isNaN(Date.parse(c.timestamp)) ? c.timestamp : new Date(c.timestamp).toLocaleString()) : '—'}
                     </td>
                     <td style={{ padding: '0.75rem 1rem', borderBottom: '1px solid #eee', whiteSpace: 'nowrap' }}>{c.name}</td>
                     <td style={{ padding: '0.75rem 1rem', borderBottom: '1px solid #eee' }}>

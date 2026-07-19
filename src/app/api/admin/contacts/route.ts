@@ -18,8 +18,12 @@ export async function GET(request: Request) {
   }
 
   interface ContactEntry { timestamp?: string; name?: string; email?: string; message?: string; site?: string; }
-  const values = await redis.mget<ContactEntry[]>(...keys);
-  const contacts = keys.map((key, i) => ({ key, ...values[i] }))
+  const values = await redis.mget<(ContactEntry | string)[]>(...keys);
+  const contacts = keys.map((key, i) => {
+    const val = values[i];
+    const entry: ContactEntry = typeof val === 'string' ? JSON.parse(val) : (val ?? {});
+    return { key, ...entry };
+  })
     .sort((a, b) => (b.timestamp ?? '').localeCompare(a.timestamp ?? ''));
 
   const format = searchParams.get('format');
