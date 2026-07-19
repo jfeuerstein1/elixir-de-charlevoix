@@ -17,7 +17,8 @@ export async function GET(request: Request) {
     return NextResponse.json([]);
   }
 
-  const values = await redis.mget<Record<string, string>[]>(...keys);
+  interface ContactEntry { timestamp?: string; name?: string; email?: string; message?: string; site?: string; }
+  const values = await redis.mget<ContactEntry[]>(...keys);
   const contacts = keys.map((key, i) => ({ key, ...values[i] }))
     .sort((a, b) => (b.timestamp ?? '').localeCompare(a.timestamp ?? ''));
 
