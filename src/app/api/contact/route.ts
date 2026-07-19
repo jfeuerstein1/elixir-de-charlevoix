@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
-import { kv } from '@vercel/kv';
+import { Redis } from '@upstash/redis';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -32,7 +32,11 @@ export async function POST(request: Request) {
       .toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
     const logKey = `contact:${site}:${timestamp}`;
     try {
-      await kv.set(logKey, { name, email, message, site, timestamp });
+      const redis = new Redis({
+        url: process.env.KV_REST_API_URL!,
+        token: process.env.KV_REST_API_TOKEN!,
+      });
+      await redis.set(logKey, { name, email, message, site, timestamp });
     } catch (kvError) {
       console.error('KV logging failed:', kvError);
     }
