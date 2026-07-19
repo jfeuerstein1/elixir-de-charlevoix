@@ -65,15 +65,15 @@ export default function AdminPage() {
               <tbody>
                 {contacts.map((c, i) => (
                   <tr key={c.key} style={{ background: i % 2 === 0 ? '#fff' : '#fafafa' }}>
-                    <td style={{ padding: '0.75rem 1rem', borderBottom: '1px solid #eee', whiteSpace: 'nowrap' }}>
+                    <td style={{ padding: '0.75rem 1rem', borderBottom: '1px solid #eee', whiteSpace: 'nowrap', color: '#333' }}>
                       {c.timestamp ? (isNaN(Date.parse(c.timestamp)) ? c.timestamp : new Date(c.timestamp).toLocaleString()) : '—'}
                     </td>
-                    <td style={{ padding: '0.75rem 1rem', borderBottom: '1px solid #eee', whiteSpace: 'nowrap' }}>{c.name}</td>
-                    <td style={{ padding: '0.75rem 1rem', borderBottom: '1px solid #eee' }}>
-                      <a href={`mailto:${c.email}`}>{c.email}</a>
+                    <td style={{ padding: '0.75rem 1rem', borderBottom: '1px solid #eee', whiteSpace: 'nowrap', color: '#333' }}>{c.name || '—'}</td>
+                    <td style={{ padding: '0.75rem 1rem', borderBottom: '1px solid #eee', whiteSpace: 'nowrap' }}>
+                      {c.email ? <a href={`mailto:${c.email}`} style={{ color: '#0066cc' }}>{c.email}</a> : '—'}
                     </td>
-                    <td style={{ padding: '0.75rem 1rem', borderBottom: '1px solid #eee', maxWidth: '400px' }}>{c.message}</td>
-                    <td style={{ padding: '0.75rem 1rem', borderBottom: '1px solid #eee' }}>{c.site}</td>
+                    <td style={{ padding: '0.75rem 1rem', borderBottom: '1px solid #eee', maxWidth: '300px', color: '#333' }}>{c.message || '—'}</td>
+                    <td style={{ padding: '0.75rem 1rem', borderBottom: '1px solid #eee', color: '#333' }}>{c.site || '—'}</td>
                   </tr>
                 ))}
               </tbody>
